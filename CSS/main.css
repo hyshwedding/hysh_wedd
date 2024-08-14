@@ -1,0 +1,370 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+html {
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+}
+
+p {
+    text-align: center;
+}
+
+.sakura_background {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.contents {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+}
+
+.wrapper {
+    width: 720px;
+    height: 100%;
+    justify-content: center;
+    /* padding: 3rem 0; */
+    background-color: white;
+}
+
+.main_title {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.main_title p {
+    width: 100%;
+    font-family: 'Deluxe Edition - Demo', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.intro {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 8rem;
+}
+
+.intro img {
+    width: 100%;
+}
+
+.host {
+    height: 100%;
+    margin: 2rem 0;
+}
+
+.host p {
+    font-family: 'MaruBuriBold';
+    font-size: 1.3rem;
+    letter-spacing: 0.33em;
+    color: #000000;
+}
+
+.detail_info p {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    color: #000000;
+}
+
+.invite {
+    text-align: center;
+    margin: 0 auto;
+    padding: 6.5rem 0;
+}
+
+.invite img {
+    height: 2rem;
+    padding: 1.3rem;
+}
+
+.invite h2 {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.25rem;
+    color: #E2A497;
+}
+
+.field p {
+    padding: 1.5rem 0;
+}
+
+.field span {
+    font-family: 'MaruBuri';
+    font-size: 1.1rem;
+    line-height: 2.35rem;
+}
+
+.name {
+    padding: 4.5rem 0;
+}
+
+.name p {
+    font-family: 'MaruBuri';
+    font-size: 1rem;
+    padding: 20px 0;
+}
+
+.name p:first-child {
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid lightgray;
+}
+
+.name span {
+    padding-left: 0.7rem;
+}
+
+.name_bold {
+    font-family: 'MaruBuriBold';
+    font-size: 1.1rem;
+}
+
+.date p {
+    padding-top: 9rem;
+}
+
+.date span {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.3rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.15rem;
+}
+
+.calendar {
+    padding: 3rem;
+}
+
+.location_title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 4rem 0 2.5rem 0;
+}
+
+.location_title p {
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding: 20px 0;
+}
+
+.location_title h2 {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.25rem;
+    color: #E2A497;
+}
+
+.location {
+    text-align: center;
+    margin: 0 4rem;
+}
+
+.location_info p {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.location_info p span {
+    line-height: 1.7rem;
+    font-family: 'MaruBuri';
+    font-size: 0.9rem;
+}
+
+.location_info p span:first-child {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.1rem;
+}
+
+.map_wrapper {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#map {
+    width: 100%;
+    height: 10rem;
+}
+
+.directions p {
+    padding: 0.7rem 0;
+    text-align: left;
+}
+
+.directions p span {
+    margin-bottom: 0.2rem;
+    line-height: 1.3rem;
+    font-family: 'MaruBuri';
+    font-size: 0.75rem;
+}
+
+.directions p span:first-child {
+    font-family: 'MaruBuriBold';
+    font-size: 0.8rem;
+    color: #E2A497;
+}
+
+.wedding_gallery {
+    padding: 0 5rem;
+}
+
+.gallery_title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 4rem 0 2.5rem 0;
+}
+
+.gallery_title p {
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding: 20px 0;
+}
+
+.gallery_title h2 {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.25rem;
+    color: #E2A497;
+}
+
+.gallery_wrapper {
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    background-color: #fcfaf9;
+}
+
+
+
+/* 폰트 */
+
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'MaruBuriSemiBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'MaruBuriBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.ttf) format("truetype");
+}
+
+
+@media all and (max-width:479px) {
+
+    .main_title {
+        margin: 3.5rem 0;
+    }
+
+    .main_title p {
+        font-size: 3.2rem;
+    }
+
+    .intro {
+        padding: 0 1rem;
+    }
+
+    .host p {
+        font-size: 1.1rem;
+    }
+
+    .detail_info p {
+        font-size: 0.93rem;
+    }
+
+    .invite {
+        padding: 4.5rem 0;
+    }
+
+    .invite h2 {
+        font-size: 1.1rem;
+    }
+    
+    .field {
+        padding: 0 1rem;
+    }
+
+    .field span {
+        font-size: 0.87rem;
+    }
+
+    .name {
+        padding: 2.5rem 0;
+    }
+
+    .date p {
+        padding-top: 5rem;
+    }
+
+    .date span {
+        letter-spacing: 0.05rem;
+    }
+
+    .calendar {
+        padding: 1.8rem;
+    }
+
+    .location_title h2 {
+        font-size: 1rem;
+    }
+
+    .location_title {
+        padding: 4rem 0 1.7rem 0;
+    }
+
+    .location {
+        margin: 0 3rem;
+    }
+
+    .location_info p span:first-child {
+        font-size: 0.9rem;
+    }
+    
+    .location_info p span {
+        font-size: 0.8rem;
+    }
+
+    .directions p {
+        padding: 0.4rem 0;
+    }
+
+    .directions p span:first-child {
+        font-size: 0.73rem;
+    }
+
+    .directions p span {
+        font-size: 0.64rem;
+        line-height: 1.03rem;
+    }
+
+    .gallery_wrapper {
+        width: auto;
+        padding: 0 7.5rem;
+    }
+
+
+}
