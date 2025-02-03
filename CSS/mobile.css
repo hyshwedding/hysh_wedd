@@ -1,0 +1,137 @@
+
+@media all and (max-width:479px) {
+
+    .contents {
+        height: 100vh;
+        align-items: center;
+    }
+
+    .wrapper {
+        width: 100vw;
+        height: 95%;
+    }
+
+    .main_title {
+        margin: 3.5rem 0;
+    }
+
+    .main_title p {
+        font-size: 3.2rem;
+    }
+
+    .intro {
+        padding: 0 1rem;
+    }
+
+    .host p {
+        font-size: 1.1rem;
+    }
+
+    .detail_info p {
+        font-size: 0.93rem;
+    }
+
+    .invite {
+        padding: 4.5rem 0;
+    }
+
+    .invite h2 {
+        font-size: 1.1rem;
+    }
+    
+    .field {
+        padding: 0 1rem;
+    }
+
+    .field span {
+        font-size: 0.87rem;
+    }
+
+    .name {
+        padding: 2.5rem 0;
+    }
+
+    .date p {
+        padding-top: 5rem;
+    }
+
+    .date span {
+        letter-spacing: 0.05rem;
+    }
+
+    .date.Dday {
+        border-radius: 60%;
+    }
+
+    .calendar {
+        padding: 1.8rem;
+    }
+
+    .location_title h2 {
+        font-size: 1rem;
+    }
+
+    .location_title {
+        padding: 4rem 0 1.7rem 0;
+    }
+
+    .location {
+        margin: 0 3rem;
+    }
+
+    .location_info p span:first-child {
+        font-size: 0.9rem;
+    }
+    
+    .location_info p span {
+        font-size: 0.8rem;
+    }
+
+    .directions p {
+        padding: 0.4rem 0;
+    }
+
+    .directions p span:first-child {
+        font-size: 0.73rem;
+    }
+
+    .directions p span {
+        font-size: 0.64rem;
+        line-height: 1.03rem;
+    }
+
+    .wedding_gallery {
+        padding: 0 2rem;
+    }
+
+    .gallery_wrapper {
+        width: auto;
+        height: auto;
+    }
+
+    .mySwiper2 {
+        height: 50vh;
+    }
+    
+    .mySwiper {
+        height: 70px;
+    }
+
+    .mySwiper img {
+        padding: 10px 0;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      background-color: #fff;
+      opacity: 0.4;
+      padding: 5px 0;
+      border-radius: 20px;
+      color: black !important;
+    }
+    
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      font-size: 1.1rem !important;
+      font-weight: 600 !important;
+    }

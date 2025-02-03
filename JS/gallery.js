@@ -1,36 +1,18 @@
-var splide = new Splide("#main-slider", {
-    width: '100%',
-    height: '100%',
-    rewind: true,
-    pagination: false,
-    cover: true,
-    arrows: true
-  });
-
-  var thumbnails = document.getElementsByClassName("thumbnail");
-  var current;
-
-  for (var i = 0; i < thumbnails.length; i++) {
-    initThumbnail(thumbnails[i], i);
-  }
-
-  function initThumbnail(thumbnail, index) {
-    thumbnail.addEventListener("click", function () {
-      splide.go(index);
-    });
-  }
-
-  splide.on("mounted move", function () {
-    var thumbnail = thumbnails[splide.index];
-
-    if (thumbnail) {
-      if (current) {
-        current.classList.remove("is-active");
-      }
-
-      thumbnail.classList.add("is-active");
-      current = thumbnail;
-    }
-  });
-
-  splide.mount();
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
