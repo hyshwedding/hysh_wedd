@@ -59,3 +59,18 @@
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  opacity: 0.4;
+  padding: 5px 0;
+  border-radius: 20px;
+  color: black !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+}
